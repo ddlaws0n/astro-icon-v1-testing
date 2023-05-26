@@ -1,0 +1,25 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<Layout title="Astro Icon Testing.">
+  <main>
+    <h1>Welcome to <span class="text-gradient">Astro Icon v1</span><Icon name="yes" /></h1>
+    <p class="instructions">
+      In the title we tested a local icon in the icons folder. Now we will test a remote icon from
+      mdi:
+      <Icon name="mdi:check" />
+    </p>
+    <ul
+      role="list"
+      class="link-card-grid">
+      <Card
+        href="https://github.com/natemoo-re/astro-icon/blob/ms/v1/packages/core/README.md"
+        title="Astro Icon v1"
+        body="Learn how Astro Icon v1 works and explore the official docs on GitHub"
+      />
+    </ul>
+  </main>
+</Layout>
